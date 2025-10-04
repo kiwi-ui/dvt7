@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import './App.css'
 import { useParams } from 'react-router-dom';
 // import Cover from './pages/Cover';
-// import Opening from './pages/Opening';
+import Opening from './pages/main/Opening'
 // import Surah from './components/Surah';
 // import Couple from './pages/Couple';
 // import Schedule from './pages/Schedule';
@@ -14,6 +14,7 @@ import { Toaster } from 'react-hot-toast';
 // import MusicPlayer from './components/MusicPlayer';
 import Aos from 'aos';
 import '../node_modules/aos/dist/aos.css';
+import Cover from './pages/Cover';
 
 function App() {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -41,18 +42,18 @@ function App() {
           </>
           
           :
-          
-          <section className='position-relative' style={{ height: '100dvh'}}>
-            <Opening />
-            <Surah />
-            <Couple />
-            <Schedule />
-            <Events />
-            <Wish />
-            <Closing 
-            songIndex={randomIndex} />
-            <MusicPlayer audioRef={audioRef} isPlaying={isPlaying} setIsPlaying={setIsPlaying} />
-          </section>
+          <Opening />        
+          // <section className='position-relative' style={{ height: '100dvh'}}>
+          //   <Opening />
+          //   <Surah />
+          //   <Couple />
+          //   <Schedule />
+          //   <Events />
+          //   <Wish />
+          //   <Closing 
+          //   songIndex={randomIndex} />
+          //   <MusicPlayer audioRef={audioRef} isPlaying={isPlaying} setIsPlaying={setIsPlaying} />
+          // </section>
         }
        <Toaster position="top-center" />
     </>
