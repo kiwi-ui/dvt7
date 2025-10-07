@@ -4,7 +4,7 @@ import style from './index.module.css';
 import initial from '../../../assets/initial.png'
 const Opening = () => {
   return (
-    <section className='py-5 d-flex justify-content-center align-items-center' style={{ height: '100dvh', position: 'relative' }}>
+    <section className='py-5 d-flex justify-content-center align-items-center' style={{ height: '100dvh', position: 'relative', zIndex: 5 }}>
         <video 
             src={entrance}
             autoPlay 

@@ -15,6 +15,11 @@ import { Toaster } from 'react-hot-toast';
 import Aos from 'aos';
 import '../node_modules/aos/dist/aos.css';
 import Cover from './pages/Cover';
+import Surah from './pages/Surah';
+import mainBg from './assets/main.png';
+import scndBg from './assets/bgStory1.png';
+import Couple from './pages/Couple';
+import Story from './pages/Story';
 
 function App() {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -42,7 +47,15 @@ function App() {
           </>
           
           :
-          <Opening />        
+          <>
+          <section className='position-relative mainPage' style={{ height: '100dvh', scrollBehavior: scrollBehavior ? 'smooth' : 'auto'}}>
+            <Opening />    
+            <Surah />    
+            <Couple />
+            <Story />
+          </section>
+
+          </>
           // <section className='position-relative' style={{ height: '100dvh'}}>
           //   <Opening />
           //   <Surah />

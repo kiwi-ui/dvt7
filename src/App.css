@@ -1,11 +1,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Caudex:ital,wght@0,400;0,700;1,400;1,700&family=Cinzel:wght@400..900&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Vidaloka&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caudex:ital,wght@0,400;0,700;1,400;1,700&family=Cinzel:wght@400..900&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Vidaloka&display=swap');
 @font-face {
   font-family: 'andada';
   src: url('./assets/fonts/andada/Andada-Regular.otf') format('opentype'),
        /* url('./assets/fonts/andada/AndadaSC-Regular.otf') format('opentype'); */
+}
+@font-face {
+  font-family: 'bohemeFlower';
+  src: url('./assets/fonts/boheme/BohemeFloral.ttf') format('truetype');
+}
+
+:root {
+  --mainColor: rgba(91, 20, 21);
+  --scndaryColor: rgba(255, 240, 229);
+}
+.textPrime{
+  color: var(--mainColor);
+}
+.montserrat {
+  font-family: 'Montserrat', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.bohemeFloral {
+  font-family: 'bohemeFlower';
+  font-weight: 400;
+  font-style: normal;
 }
 .andada {
   font-family: 'andada', serif;
@@ -50,7 +73,15 @@
   font-weight: 400;
   font-style: normal;
 }
-
+.fraunces {
+  font-family: "Fraunces", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "SOFT" 0,
+    "WONK" 0;
+}
 /* .caudex-bold {
   font-family: "Caudex", serif;
   font-weight: 700;
@@ -68,3 +99,42 @@
   font-weight: 700;
   font-style: italic;
 } */
+
+.mainPage{
+  background-image: url('./assets/main.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100dvh;
+}
+.bgCouple{
+  background-image: url('./assets/main.png');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+.bgStory{
+  background-image: url('./assets/bgStory1.png');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+/*blinking */
+
+@keyframes blink {
+  0% {
+    opacity: 1; /* Fully visible */
+  }
+  50% {
+    opacity: 0; /* Fully invisible */
+  }
+  100% {
+    opacity: 1; /* Back to fully visible */
+  }
+}
+
+.blinkingIcon {
+  /* Apply the animation */
+  animation: blink 2.2s infinite; /* name, duration, repeat count */
+}
