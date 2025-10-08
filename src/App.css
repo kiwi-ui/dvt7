@@ -11,13 +11,22 @@
   font-family: 'bohemeFlower';
   src: url('./assets/fonts/boheme/BohemeFloral.ttf') format('truetype');
 }
-
+@font-face {
+  font-family: 'analogue';
+  src: url('./assets/fonts/analogue/TrueType/AnalogueRed-55Regular.ttf') format('truetype');
+}
 :root {
   --mainColor: rgba(91, 20, 21);
   --scndaryColor: rgba(255, 240, 229);
 }
 .textPrime{
   color: var(--mainColor);
+}
+.analogue{
+  font-family: 'analogue', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 .montserrat {
   font-family: 'Montserrat', sans-serif;
@@ -124,17 +133,16 @@
 
 @keyframes blink {
   0% {
-    opacity: 1; /* Fully visible */
+    opacity: 1;
   }
   50% {
-    opacity: 0; /* Fully invisible */
+    opacity: 0;
   }
   100% {
-    opacity: 1; /* Back to fully visible */
+    opacity: 1;
   }
 }
 
 .blinkingIcon {
-  /* Apply the animation */
-  animation: blink 2.2s infinite; /* name, duration, repeat count */
+  animation: blink 2.2s infinite;
 }

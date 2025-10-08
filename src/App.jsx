@@ -20,6 +20,7 @@ import mainBg from './assets/main.png';
 import scndBg from './assets/bgStory1.png';
 import Couple from './pages/Couple';
 import Story from './pages/Story';
+import SaveDate from './pages/SaveDate';
 
 function App() {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -53,6 +54,7 @@ function App() {
             <Surah />    
             <Couple />
             <Story />
+            <SaveDate />
           </section>
 
           </>
