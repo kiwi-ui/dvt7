@@ -6,6 +6,7 @@ import { MdOutlineKeyboardDoubleArrowRight } from "react-icons/md";
 
 const Story = () => {
   const [activeIndex, setActiveIndex] = useState(0);
+  
   return (
     <section id='stories' className=' text-white h-100 d-flex justify-content-center align-items-center bgStory position-relative' style={{ zIndex: 5, position: 'relative' }}>
         <div className={`container ${style.borderStory} mx-3 position-relative`}>            

@@ -1,12 +1,6 @@
 import { CiLock, CiUnlock } from 'react-icons/ci';
 import style from './index.module.css'
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
-import coverImg from '../../assets/cover/cover.png';
-import corner from '../../assets/corner.png';
-import corner2 from '../../assets/corner2.png';
-import corner3 from '../../assets/corner3.png';
-import corner4 from '../../assets/corner4.png';
-import cover from '../../assets/cover/cover.png';
 
 const Cover = ({name, isPlaying, setOpenMainPage, setIsPlaying, setScrollBehavior}) => {
   const handleOpenMainPage = (e) => {

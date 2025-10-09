@@ -1,0 +1,47 @@
+.outlineIn{
+    outline: 1px solid white;
+    outline-offset: -8px;
+}
+.divider::after{
+    display: block;
+    content: "";
+    border-block-end: 0;
+    flex-grow: 1;
+    border-block-end: 3px solid rgba(91, 20, 21);
+}
+.divider::before{
+    display: block;
+    content: "";
+    border-block-start: 0;
+    flex-grow: 1;
+    border-block-start: 3px solid rgba(91, 20, 21);
+}
+.bgButton{
+    background-color: #CEB172 !important;
+}
+.bg {
+    background-image: url('../../assets/bgCouple.png');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 190%;
+    background-blend-mode: darken;
+}
+.bg::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: rgb(255, 255, 255, 0.23);
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 50rem;
+}
+.detail * {
+    position: relative;
+    z-index: 10;
+}
+.borderEvents{
+    border:4px #CEB172 solid;
+}

@@ -21,6 +21,7 @@ import scndBg from './assets/bgStory1.png';
 import Couple from './pages/Couple';
 import Story from './pages/Story';
 import SaveDate from './pages/SaveDate';
+import Events from './pages/Events';
 
 function App() {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -55,6 +56,7 @@ function App() {
             <Couple />
             <Story />
             <SaveDate />
+            <Events />
           </section>
 
           </>
