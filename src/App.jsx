@@ -16,12 +16,11 @@ import Aos from 'aos';
 import '../node_modules/aos/dist/aos.css';
 import Cover from './pages/Cover';
 import Surah from './pages/Surah';
-import mainBg from './assets/main.png';
-import scndBg from './assets/bgStory1.png';
 import Couple from './pages/Couple';
 import Story from './pages/Story';
 import SaveDate from './pages/SaveDate';
 import Events from './pages/Events';
+import Gallery from './pages/Gallery';
 
 function App() {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -57,6 +56,7 @@ function App() {
             <Story />
             <SaveDate />
             <Events />
+            <Gallery />
           </section>
 
           </>

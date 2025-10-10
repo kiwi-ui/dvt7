@@ -128,7 +128,12 @@
   background-size: cover;
   background-position: center;
 }
-
+.bgGallery{
+  background-image: url('./assets/main.png');
+  background-attachment: fixed;
+  background-size: 150%;
+  background-position: center;
+}
 /*blinking */
 
 @keyframes blink {
