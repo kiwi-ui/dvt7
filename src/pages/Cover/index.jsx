@@ -1,6 +1,6 @@
 import { CiLock, CiUnlock } from 'react-icons/ci';
-import style from './index.module.css'
-import { DotLottieReact } from '@lottiefiles/dotlottie-react';
+import style from './index.module.css';
+import logo from '../../assets/initial.png';
 
 const Cover = ({name, isPlaying, setOpenMainPage, setIsPlaying, setScrollBehavior}) => {
   const handleOpenMainPage = (e) => {
@@ -15,35 +15,13 @@ const Cover = ({name, isPlaying, setOpenMainPage, setIsPlaying, setScrollBehavio
 
   return (
       <section className={`position-relative text-center cover`} style={{ height: '100dvh' }}>    
-      {/* <img className="position-absolute top-0 start-0" src={corner} alt="" />
-      <img className="position-absolute top-0 end-0" src={corner2} alt="" />
-      <img className="position-absolute bottom-0 start-0" src={corner3} alt="" />
-      <img className="position-absolute bottom-0 end-0" src={corner4} alt="" />      */}
-      {/* <img src={coverImg} className="w-75 start-50 top-50 translate-middle position-absolute" alt="cover" style={{ zIndex: '10' }} /> */}
-        {/* <DotLottieReact
-        src="https://lottie.host/d44e2b6d-383a-4743-9a71-da5b1fce1b47/I7XQgFVPtn.lottie"
-        loop
-        autoplay
-        style={{
-          position: "absolute",
-          top: 0,
-          width: "100%",
-          zIndex: 10,
-          pointerEvents: "none",
-          objectFit: 'contain'
-        }}
-      /> */}
-        <div className={`${style.cover} d-flex flex-column justify-content-center align-items-center h-100`}>
+        <div className={`${style.cover} d-flex flex-column justify-content-center align-items-center h-100 textPrime`}>
+          <img src={logo} className="w-25 mb-4" alt="initial"  data-aos="fade-up" data-aos-duration="3000" />
+
           <div style={{ zIndex: 2 }} >
-            <p className="cormorantGaramond mb-0" data-aos="zoom-in-down" data-aos-duration="2000">The Wedding of</p>
-            <p className="greatVibes fw-bold text-warning2 mb-4 mt-4" style={{  fontSize: '3.2rem', letterSpacing: '0.2rem' }} data-aos="fade-up-right" data-aos-duration="3000">
-              Sisin
-            </p>
-            <p className="greatVibes fw-semibold text-warning2 mb-4 " style={{ fontSize: '2rem', letterSpacing: '0.2rem' }} data-aos="flip-left" data-aos-duration="2800">
-              &
-            </p>
-            <p className="greatVibes fw-bold text-warning2 mb-4" style={{  fontSize: '3.2rem', letterSpacing: '0.2rem' }} data-aos="fade-up-left" data-aos-duration="3000">
-              Ikhtiar
+            <p className="cormorantGaramond mb-0 fw-semibold fs-5" data-aos="zoom-in-down" data-aos-duration="2000">The Wedding of</p>
+            <p className="vidaloka my-3" style={{  fontSize: '2rem', letterSpacing: '0.2rem' }} data-aos="fade-up-right" data-aos-duration="3000">
+              Anonim & Anonim
             </p>
           </div>
 
@@ -51,12 +29,12 @@ const Cover = ({name, isPlaying, setOpenMainPage, setIsPlaying, setScrollBehavio
             <div className="" data-aos="fade-zoom-in" data-aos-duration="3000" data-aos-delay="1400">
               <p className="mb-0">Kepada yang terhormat</p>
               <p className="mb-0">Bapak/Ibu/Saudara/i</p>
-              <p className="my-1 text-warning2 fs-5 pt-2">{name}</p>
+              <p className="my-1 mb-0 mt-1 fs-4 py-4">{name}</p>
             </div>
           </div>
           
-          <button className="btn shadow-lg bg-primary2 rounded-pill d-flex flex-row align-items-center gap-2 text-black cormorantG py-1 px-3 text-white fw-semibold" type="button" onClick={handleOpenMainPage} style={{ zIndex: 2 }} data-aos="fade-up" data-aos-duration="1800">
-            {isPlaying ? <CiUnlock className=''/> : <CiLock />} <p className="mb-0">Buka Undangan</p>
+          <button className="shadow-lg bgButtonPrime border-0 d-flex flex-row align-items-center gap-2 text-black cormorantG py-1 px-3 text-white" type="button" onClick={handleOpenMainPage} style={{ zIndex: 2, fontSize: '1.1rem' }} data-aos="fade-up" data-aos-duration="1800">
+            {isPlaying ? <CiUnlock className='fw-bold'/> : <CiLock className='fw-bold'/>} <p className="mb-0">Buka Undangan</p>
           </button>
         </div>
       </section>

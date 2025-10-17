@@ -2,8 +2,9 @@
     background: url('../../assets/cover.png') no-repeat;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: bottom;
 }
+
 .cover::before{
     content: "";
     position: absolute;
@@ -13,4 +14,12 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0. 1.6);
     z-index: 1;
+}
+@media screen and (min-width: 768px) {
+    .cover{
+        background: url('../../assets/cover1.png') no-repeat;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: bottom;
+    }   
 }

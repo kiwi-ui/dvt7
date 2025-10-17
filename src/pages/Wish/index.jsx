@@ -99,7 +99,7 @@ const Wish = () => {
                 <select
                   className="form-control shadow"
                   name="kehadiran"
-                  data-aos="fade-left"
+                  data-aos="fade-top"
                   data-aos-duration="3000"
                   value={formData.kehadiran}
                   onChange={kehadiranListener}
@@ -113,7 +113,7 @@ const Wish = () => {
               <div className="mb-3">
                 <textarea
                   className="form-control shadow"
-                  data-aos="fade-right"
+                  data-aos="fade-top"
                   data-aos-duration="3000"
                   placeholder="Your wish"
                   value={message}

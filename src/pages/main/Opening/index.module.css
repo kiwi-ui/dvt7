@@ -12,3 +12,14 @@
   animation: moveDown 1.5s infinite ease-in-out;
 }
 
+@media (min-width: 992px) {
+  .hideOnLaptop {
+    display: none !important; /* Use !important if necessary to override inline styles */
+  }
+  .coverImg {
+    background-image: url('../../../assets/cover1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}

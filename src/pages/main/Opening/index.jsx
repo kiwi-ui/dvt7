@@ -4,14 +4,14 @@ import style from './index.module.css';
 import initial from '../../../assets/initial.png'
 const Opening = () => {
   return (
-    <section className='py-5 d-flex justify-content-center align-items-center' style={{ height: '100dvh', position: 'relative', zIndex: 5 }}>
+    <section className={`py-5 d-flex justify-content-center align-items-center ${style.coverImg}`} style={{ height: '100dvh', position: 'relative', zIndex: 5 }}>
         <video 
             src={entrance}
             autoPlay 
             muted 
             playsInline 
             style={{ objectFit: 'fill'}}
-            className='position-absolute start-0 w-100 top-0 h-100'
+            className={`position-absolute start-0 w-100 top-0 h-100 ${style.hideOnLaptop}`}
         ></video>
 
         <div className="container position-relative my-5 h-75 mx-auto" style={{zIndex:10}}>
