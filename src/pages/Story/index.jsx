@@ -9,17 +9,17 @@ const Story = () => {
   
   return (
     <section id='stories' className=' text-white h-100 d-flex justify-content-center align-items-center bgStory position-relative' style={{ zIndex: 5, position: 'relative' }}>
-        <div className={`container ${style.borderStory} mx-3 position-relative`}>            
+        <div className={`container ${style.borderStory} rounded-5 mx-3 px-4 position-relative overflow-x-hidden`} data-aos="flip-left" data-aos-duration="2000" style={{ maxHeight: '80vh', overflowY: 'auto' }}>            
             {
               Stories.map((story, index) => (
-                <div key={story.id} className={`my-5 py-5 ${activeIndex === index ? '' : 'd-none'}`}>
+                <div key={story.id} className={`my-5 pb-5 ${activeIndex === index ? '' : 'd-none'}`}>
                   <h2 className='mb-4 text-center'>{story.title}</h2>
-                  <p className="text-wrap" style={{ textAlign: 'justify' }}>{story.content}</p>
+                  <p className="text-wrap pb-3" style={{ textAlign: 'justify' }}>{story.content}</p>
                 </div>
               ))
             }
 
-            <div className="position-absolute bottom-0 row w-100 ">
+            <div className="position-absolute bottom-0 row w-100 pe-3 pb-5">
                 <p className={`col-6 ${activeIndex === 0 ? 'opacity-0 disabled' : 'blinkingIcon'} `} onClick={() => setActiveIndex((page) => (page) === 0 ? 0 : page-1 )}><MdOutlineKeyboardDoubleArrowLeft size={30}/></p>
                 <p className={`col-6 text-end ${activeIndex === Stories.length-1 ? 'opacity-0 disabled' : 'blinkingIcon'} `} onClick={() => setActiveIndex((page) => (page) === Stories.length ? Stories.length-1 : page+1 )}><MdOutlineKeyboardDoubleArrowRight size={30}/></p>
             </div>

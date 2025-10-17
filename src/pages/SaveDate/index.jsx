@@ -6,7 +6,7 @@ const SaveDate = () => {
     <section className={`position-relative`}>
         <div className={`${style.bgReminder} py-5`}>
             <div className="container position-relative text-white my-5" style={{ zIndex:10 }}>
-                <h2 className='text-center bohemeFloral pb-3 fw-bold' style={{ fontSize: '2.7rem' }}>Save The Date</h2>
+                <h2 className='text-center bohemeFloral pb-3 fw-bold' style={{ fontSize: '2.7rem' }} data-aos="zoom-in" data-aos-duration="2500">Save The Date</h2>
                 <Countdown />
             </div>
         </div>
