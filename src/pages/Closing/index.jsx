@@ -22,24 +22,24 @@ const Closing = ({songIndex}) => {
             
             <div className="d-flex flex-row gap-2 justify-content-center">
               <a className="p-2 bgIcon rounded-circle d-flex align-content-center" data-aos="fade-right" data-aos-duration="3000" href="https://www.instagram.com/yanggaraa/">
-                <AiFillInstagram className="colorIcon fs-3"/>
+                <AiFillInstagram className="textPrime fs-3"/>
               </a>
               <a className="p-2 bgIcon rounded-circle d-flex align-content-center" data-aos="fade-up" data-aos-duration="1500" href="https://wa.link/0gd2cu">
-                <IoLogoWhatsapp className="colorIcon fs-3"/>
+                <IoLogoWhatsapp className="textPrime fs-3"/>
               </a>
               {songIndex ==  0 &&
                 <a className="p-2 bgIcon rounded-circle d-flex align-content-center" target='blank' data-aos="fade-left" data-aos-duration="3000" href="https://www.youtube.com/watch?v=tX73H2FRcK8">
-                  <FaItunesNote className="colorIcon fs-3"/>
+                  <FaItunesNote className="textPrime fs-3"/>
                 </a>
               }
               {songIndex ==  1 &&
                 <a className="p-2 bgIcon rounded-circle d-flex align-content-center" target='blank' data-aos="fade-left" data-aos-duration="3000" href="https://www.youtube.com/watch?v=Cj7E2YB3pe0">
-                  <FaItunesNote className="colorIcon fs-3"/>
+                  <FaItunesNote className="textPrime fs-3"/>
                 </a>
               }
               {songIndex ==  2 &&
                 <a className="p-2 bgIcon rounded-circle d-flex align-content-center" target='blank' data-aos="fade-left" data-aos-duration="3000" href="https://www.youtube.com/watch?v=INnehEK0Yec">
-                  <FaItunesNote className="colorIcon fs-3"/>
+                  <FaItunesNote className="textPrime fs-3"/>
                 </a>
               }
             </div>
