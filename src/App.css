@@ -178,3 +178,7 @@
   background-image: url('./assets/cards/card2.webp');
   background-size: contain;
 }
+a{
+  text-decoration: none;
+  color: inherit;
+}

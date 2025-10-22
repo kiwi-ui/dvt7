@@ -14,7 +14,7 @@ const Closing = ({songIndex}) => {
 
             <div className="py-5">
               <p data-aos="fade-right" data-aos-duration="3000">Menjadi sebuah kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir dalam hari bahagia ini. Terima kasih atas segala ucapan, doa, dan perhatian yang diberikan.</p>
-              <p className="vidaloka fs-2" data-aos="fade-left" data-aos-duration="3000">Dinda & Haikal</p>
+              <p className="vidaloka fs-2" data-aos="fade-left" data-aos-duration="3000">Anonim & anonim</p>
             </div>
 
           <div className="border-top w-50 mx-auto border-warning animate__animated animate__fadeInUp animate__delay-1s mt-4">
