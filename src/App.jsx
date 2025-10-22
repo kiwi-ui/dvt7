@@ -44,6 +44,9 @@ function App() {
     Aos.refresh();
   }, []);
   
+  const [isPhotoClicked, setisPhotoClicked] = useState()
+  const [clickedPhoto, setClickedPhoto] = useState('')
+
   return (
      <>
        {
@@ -62,7 +65,7 @@ function App() {
             <Story />
             <SaveDate />
             <Events />
-            <Gallery />
+            <Gallery isPhotoClicked={isPhotoClicked} setisPhotoClicked={setisPhotoClicked} clickedPhoto={clickedPhoto} setClickedPhoto={setClickedPhoto}/>
             <Gift />
             <Wish />
             <Closing songIndex={songIndex}/>
