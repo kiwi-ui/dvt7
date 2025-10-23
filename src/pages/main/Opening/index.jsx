@@ -1,7 +1,8 @@
 import entrance from '../../../assets/opening/entrance.mp4';
 import { RiArrowDownDoubleLine } from "react-icons/ri";
 import style from './index.module.css';
-import initial from '../../../assets/initial.png'
+import initial from '../../../assets/initial.png';
+
 const Opening = () => {
   return (
     <section className={`py-5 d-flex justify-content-center align-items-center ${style.coverImg}`} style={{ height: '100dvh', position: 'relative', zIndex: 5 }}>
@@ -15,7 +16,7 @@ const Opening = () => {
         ></video>
 
         <div className="container position-relative my-5 h-75 mx-auto" style={{zIndex:10}}>
-            <div className="rounded-pill h-100 p-2" data-aos="flip-right" data-aos-easing="ease-in-sine" data-aos-duration="2000" style={{ background: 'rgba(255, 232, 223, 0.7)'}}>
+            <div className={`rounded-pill h-100 p-2 ${style.openingContainer} mx-auto`} data-aos="flip-right" data-aos-easing="ease-in-sine" data-aos-duration="2000" style={{ background: 'rgba(255, 232, 223, 0.7)'}}>
                 <div className="rounded-pill h-100 p-3" style={{ background: 'rgba(249, 245, 221, 0.2)', backdropFilter: 'blur(0.5px)', borderColor: 'rgba(91, 20, 21, 0.9)', borderWidth: '6px', borderStyle: 'solid', borderSpacing:'2px' }}>
                     <div className="py-5 d-flex flex-column justify-content-center align-items-center h-100 text-center">
                         <img src={initial} alt="logo" style={{ width: '120px' }} />
