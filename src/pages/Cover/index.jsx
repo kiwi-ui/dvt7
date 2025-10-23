@@ -1,6 +1,6 @@
 import { CiLock, CiUnlock } from 'react-icons/ci';
 import style from './index.module.css';
-import logo from '../../assets/initial.png';
+import logo from '../../assets/initial.webp';
 
 const Cover = ({name, isPlaying, setOpenMainPage, setIsPlaying, setScrollBehavior}) => {
   const handleOpenMainPage = (e) => {

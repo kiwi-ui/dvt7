@@ -1,4 +1,4 @@
-import entrance from '../../../assets/opening/entrance.mp4';
+import entrance from '../../../assets/opening/openin.mp4';
 import { RiArrowDownDoubleLine } from "react-icons/ri";
 import style from './index.module.css';
 import initial from '../../../assets/initial.png';
