@@ -1,6 +1,7 @@
 import { cards } from "../../utlis/cards";
 import code from '../../assets/cards/code.png';
 import { useState } from "react";
+import style from './index.module.css';
 
 const Gift = () => {
   const [showBar, setShowBar] = useState(false);
@@ -10,7 +11,7 @@ const Gift = () => {
   return (
     <section className="bgGift">
         <div className="container py-5">
-            <div className="bgGallery text-center container rounded-4 p-4" style={{ backgroundSize: '130%' }}>
+            <div className={`${style.bgGallery} bgGallery text-center container rounded-4 p-4 mx-auto`} style={{ backgroundSize: '130%' }}>
                 <div>
                     <p className="vidaloka fs-1" data-aos="zoom-in-up" data-aos-duration="3000">Wedding Gift</p>
                     <p className="caudex" data-aos="zoom-in-down" data-aos-duration="3000">Doa restu Anda merupakan karunia yang sangat berarti bagi kami, dan jika memberi adalah ungkapan tanda kasih, Anda dapat memberi kado secara cashless.</p>

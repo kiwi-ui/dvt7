@@ -1,5 +1,9 @@
 .bgSurah{
-    background-color: rgba(255, 240, 229, 0.3);
+    background-color: rgb(250, 235, 215, 0.56);
+}
+.paddingPhone{
+    padding-right: 1rem;
+    padding-left: 1rem;
 }
 @media (min-width: 992px) {
     .photoSurah {

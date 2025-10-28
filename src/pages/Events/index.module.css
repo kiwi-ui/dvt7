@@ -45,3 +45,8 @@
 .borderEvents{
     border:4px #CEB172 solid;
 }
+@media (min-width: 700px) {
+    .openingContainer {
+        width: 50vw;
+    }
+}

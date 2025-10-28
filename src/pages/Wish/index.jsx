@@ -5,7 +5,7 @@ import toast from 'react-hot-toast';
 import { formatDistance } from 'date-fns';
 import { background, textColor } from '../../utlis/profileStyles';
 import { webapp } from '../../utlis/googlesheetDetails';
-
+import style from './index.module.css';
 const Wish = () => {
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
@@ -76,14 +76,14 @@ const Wish = () => {
 
 
   return (
-    <div className={`py-5`}>
+    <div className={` ${style.wish} py-5`}>
       <div className="container text-center">
         <div className="">
           <div className="text-dark" >
             <p className="fw-bold mb-2 text-warning2 text-warning2 garlicha" data-aos="fade-down" data-aos-duration="2500" style={{fontSize: '2.6rem'}}>Wishes</p>
             <p data-aos="fade-up" duration="3000">Sampaikan harapan terbaik anda untuk mempelai</p>
 
-            <form name="wishApp" id='form' className="text-start" onSubmit={sendWish}>
+            <form name="wishApp" id='form' className={`${style.surah} text-start`} onSubmit={sendWish}>
               <div className="mb-3">
                 <input
                   className="form-control shadow"

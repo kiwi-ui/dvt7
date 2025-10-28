@@ -1,0 +1,8 @@
+@media screen and (min-width: 992px) {
+    .surah{
+        width: 45%;
+    }  
+}
+.wish{
+    background-color: rgb(250, 235, 215, 0.56);
+}
