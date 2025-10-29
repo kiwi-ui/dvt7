@@ -1,17 +1,9 @@
 import { useEffect, useState } from 'react'
 import './App.css'
 import { useParams } from 'react-router-dom';
-// import Cover from './pages/Cover';
 import Opening from './pages/main/Opening'
-// import Surah from './components/Surah';
-// import Couple from './pages/Couple';
-// import Schedule from './pages/Schedule';
-// import Events from './pages/Events';
-// import Wish from './pages/Wish';
 import { Toaster } from 'react-hot-toast';
-// import Closing from './components/Closing';
 import  { randomIndex, useAudioRefService } from './service/audioRefService';
-// import MusicPlayer from './components/MusicPlayer';
 import Aos from 'aos';
 import '../node_modules/aos/dist/aos.css';
 import Cover from './pages/Cover';

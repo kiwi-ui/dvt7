@@ -17,28 +17,28 @@ const Closing = ({songIndex}) => {
               <p className="vidaloka fs-2" data-aos="fade-down" data-aos-duration="3000">Anonim & anonim</p>
             </div>
 
-          <div className="border-top w-50 mx-auto border-prime border-2 animate__animated animate__fadeInUp animate__delay-1s mt-4 pb -5">
+          <div className="border-top w-50 mx-auto border-prime border-2 mt-4 pb -5">
             <p className={`${style.fst} mt-3 mb-3`} data-aos="zoom-in" data-aos-duration="3000">Made With ♥ Divition</p>
             
             <div className="d-flex flex-row gap-2 justify-content-center">
-              <a className="p-2 bgIcon rounded-circle d-flex align-content-center" data-aos="fade-up" data-aos-duration="3000" href="https://www.instagram.com/yanggaraa/">
+              <a className="p-2 bgIcon rounded-circle d-flex align-content-center" href="https://www.instagram.com/yanggaraa/">
                 <AiFillInstagram className="textPrime fs-3"/>
               </a>
-              <a className="p-2 bgIcon rounded-circle d-flex align-content-center" data-aos="fade-up" data-aos-duration="1500" href="https://wa.link/0gd2cu">
+              <a className="p-2 bgIcon rounded-circle d-flex align-content-center" href="https://wa.link/0gd2cu">
                 <IoLogoWhatsapp className="textPrime fs-3"/>
               </a>
               {songIndex ==  0 &&
-                <a className="p-2 bgIcon rounded-circle d-flex align-content-center" target='blank' data-aos="fade-down" data-aos-duration="3000" href="https://www.youtube.com/watch?v=tX73H2FRcK8">
+                <a className="p-2 bgIcon rounded-circle d-flex align-content-center" target='blank' href="https://www.youtube.com/watch?v=tX73H2FRcK8">
                   <FaItunesNote className="textPrime fs-3"/>
                 </a>
               }
               {songIndex ==  1 &&
-                <a className="p-2 bgIcon rounded-circle d-flex align-content-center" target='blank' data-aos="fade-down" data-aos-duration="3000" href="https://www.youtube.com/watch?v=Cj7E2YB3pe0">
+                <a className="p-2 bgIcon rounded-circle d-flex align-content-center" target='blank' href="https://www.youtube.com/watch?v=Cj7E2YB3pe0">
                   <FaItunesNote className="textPrime fs-3"/>
                 </a>
               }
               {songIndex ==  2 &&
-                <a className="p-2 bgIcon rounded-circle d-flex align-content-center" target='blank' data-aos="fade-down" data-aos-duration="3000" href="https://www.youtube.com/watch?v=INnehEK0Yec">
+                <a className="p-2 bgIcon rounded-circle d-flex align-content-center" target='blank' href="https://www.youtube.com/watch?v=INnehEK0Yec">
                   <FaItunesNote className="textPrime fs-3"/>
                 </a>
               }
