@@ -9,7 +9,7 @@ const Loading = React.lazy(() => import('./components/Loading/index.jsx'))
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <Suspense fallback={<Loading />}>
-      <BrowserRouter>
+      <BrowserRouter basename="/dvt7">
         <Routes>
             <Route path='/:name' element={ <App /> }/>
         </Routes>
