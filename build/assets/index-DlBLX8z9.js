@@ -1,0 +1,1 @@
+import{j as e}from"./index-B8fyzEFs.js";const s="_loader_9n5sk_1",t={loader:s},n=()=>e.jsx("div",{className:"d-flex justify-content-center align-items-center vh-100",children:e.jsx("span",{className:`${t.loader}`})});export{n as default};
